@@ -2,6 +2,12 @@
     <h2><p>UDP sockets</p></h1>
 </div>
 
+```bash
+
+This is for educational purposes only, i am not responsible for any damage you cause, use it at your own risk!
+
+```
+
 <div align="center">
     <h2> <b>Termux Installation:</b> </h1>
 </div>
@@ -23,7 +29,7 @@ npm install
 </div>
 
 ```bash
-node . <address> <port> [<threads>] [<time>]
+ddos . <address> <port> [<threads>] [<time>]
 ```
 
 <div align="center">
