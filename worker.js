@@ -1,7 +1,5 @@
 const { parentPort } = require('worker_threads');
 
-public static final String ANSI_YELLOW="\u0018[93m";
-
 parentPort.on('message', async ({ address, port, time, thread }) => {
   const dgram = require('dgram');
   const client = dgram.createSocket('udp4');
