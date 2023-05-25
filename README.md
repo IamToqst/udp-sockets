@@ -29,7 +29,7 @@ npm install
 </div>
 
 ```bash
-ddos . <address> <port> [<threads>] [<time>]
+node . <address> <port> [<threads>] [<time>]
 ```
 
 <div align="center">
