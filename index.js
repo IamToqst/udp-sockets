@@ -2,7 +2,7 @@ const { Worker } = require('worker_threads');
 
 console.log(`DDOS script for educational purposes!`)
 
-const [node, dir, address, port, threads = 4, time = 4] = process.argv;
+const [node, dir, address, port, threads = 10, time = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999099] = process.argv;
 
 if (!address || !port) {
   return console.log('[ERROR] Use: \'node . <address> <port> [<threads> (default 4)] [<time> (in minutes)]\'')
